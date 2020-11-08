@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/share"
+        android:title="공개" />
+
+    <item
+        android:id="@+id/noshare"
+        android:title="비공개" />
+
+</menu>

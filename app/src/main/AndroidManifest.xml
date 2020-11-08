@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.walk">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ShareRouteDetail"></activity>
+        <activity android:name=".MyRouteDetail" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MyRouteDialog"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+
+        <service
+            android:name=".MyWalkService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+
+        <activity android:name=".PasswordEdit" />
+        <activity android:name=".MyFavoriteFeed" />
+        <activity android:name=".MyFeed" />
+        <activity
+            android:name=".MemoDialog"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+        <activity android:name=".RecordDtailModified" />
+        <activity android:name=".RecordDtail" />
+        <activity android:name=".FeedDtail" />
+        <activity android:name=".DiaryModified" />
+        <activity android:name=".DiaryDtail" />
+        <activity android:name=".PostWriting" />
+        <activity android:name=".FeedWriting" />
+        <activity android:name=".WalkRoute" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDpmfGnnJJp6V1fx_v-AOqAIz3KKhb2_7Q" />
+
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".Join"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Memo" />
+        <activity android:name=".Album" />
+        <activity android:name=".Mypage" />
+        <activity android:name=".Statistics" />
+        <activity android:name=".Feed" />
+        <activity android:name=".WalkLog" />
+        <activity android:name=".WalkStart" />
+        <activity android:name=".WalkEnd" />
+        <activity android:name=".Journal" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

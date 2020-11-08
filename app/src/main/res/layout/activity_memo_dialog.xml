@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="600dp"
+    android:background="@color/design_default_color_background"
+    tools:context=".MemoDialog">
+
+    <TextView
+        android:id="@+id/option_codetype_dialog_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="메모하기"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_numbers_bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline6">
+
+        <EditText
+            android:id="@+id/edit_title_postDialog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/underline"
+            android:ems="10"
+            android:fontFamily="@font/nanumsquare"
+            android:hint="제목"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/edit_postDialog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@color/design_default_color_background"
+            android:fontFamily="@font/nanumsquare"
+            android:gravity="top"
+            android:hint="내용"
+            android:padding="5dp"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_img_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_numbers_bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:minHeight="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/option_codetype_dialog_negative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#757575"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btn_sava_postDialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="저장"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adress_postDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_place_blue"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/nanumsquare"
+        android:gravity="center_vertical"
+        android:text="광주광역시 남구 양림동"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTime_postDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_time_24px"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/nanumsquare"
+        android:gravity="center_vertical"
+        android:text="2020-08-05"
+        app:layout_constraintBottom_toTopOf="@+id/adress_postDialog"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time_postDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:fontFamily="@font/nanumsquare"
+        android:gravity="center_vertical"
+        android:text="PM 3:00"
+        app:layout_constraintBottom_toTopOf="@+id/adress_postDialog"
+        app:layout_constraintStart_toEndOf="@+id/dateTime_postDialog"
+        app:layout_constraintTop_toTopOf="@+id/dateTime_postDialog" />
+
+    <ImageView
+        android:id="@+id/camera_post"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/ic_camera_alt_24px"
+        app:layout_constraintBottom_toBottomOf="@+id/album_post"
+        app:layout_constraintEnd_toStartOf="@+id/album_post"
+        app:layout_constraintTop_toTopOf="@+id/album_post"
+        app:srcCompat="@drawable/ic_camera_alt_24px" />
+
+    <ImageView
+        android:id="@+id/album_post"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_insert_photo_24px"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option_codetype_dialog_title_tv"
+        app:srcCompat="@drawable/ic_insert_photo_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

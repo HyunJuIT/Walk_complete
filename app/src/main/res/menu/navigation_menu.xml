@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_journal"
+        android:enabled="true"
+        android:icon="@drawable/ic_journal"
+        android:title="산책기록" />
+
+    <item
+        android:id="@+id/action_route"
+        android:enabled="true"
+        android:icon="@drawable/ic_route"
+        android:title="산책루트" />
+
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="HOME" />
+
+    <item
+        android:id="@+id/action_feed"
+        android:enabled="true"
+        android:icon="@drawable/ic_feed"
+        android:title="피드" />
+
+    <item
+        android:id="@+id/action_person"
+        android:enabled="true"
+        android:icon="@drawable/ic_person"
+        android:title="My" />
+
+</menu>

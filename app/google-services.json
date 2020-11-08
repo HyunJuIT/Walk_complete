@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "418432847679",
+    "firebase_url": "https://walk-48844.firebaseio.com",
+    "project_id": "walk-48844",
+    "storage_bucket": "walk-48844.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418432847679:android:25b401db7dcaada4d68d8a",
+        "android_client_info": {
+          "package_name": "com.example.walk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418432847679-qd2qpoj3ju74drg5bsup8pa5mac6a99l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDj2ccrrN6nfV5TSSWW85Lror-3wembH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418432847679-qd2qpoj3ju74drg5bsup8pa5mac6a99l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
